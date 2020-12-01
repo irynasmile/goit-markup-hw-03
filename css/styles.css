@@ -156,7 +156,7 @@ ul > .address-contact-item + .address-contact-item {
 
 /*========= hero =========*/
 .hero {
-  background: #000000;
+  background: #2f303a;
   text-align: center;
   margin-bottom: 89px;
 }
@@ -251,7 +251,8 @@ li.occupation-list-item + .occupation-list-item {
 }
 .our-team-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   /* background-color: green; */
 }
 /* background: green; */
