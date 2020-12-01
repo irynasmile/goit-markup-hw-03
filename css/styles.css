@@ -32,20 +32,6 @@ a {
 }
 /*======== header   ============*/
 
-/* .page-header {
-  background: blue;
-} */
-/* .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  align-items: center;
-  justify-content: center;
-
-  outline: 2px solid tomato;
-} */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -167,17 +153,7 @@ ul > .address-contact-item + .address-contact-item {
   margin-left: 50px;
 }
 /*=========  main  =========*/
-/* .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
-  align-items: center;
-  justify-content: center;
 
-  outline: 2px solid tomato;
-} */
 /*========= hero =========*/
 .hero {
   background: #000000;
