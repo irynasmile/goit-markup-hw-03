@@ -22,6 +22,23 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* ul,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+} */
+
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
 ul {
   padding: 0;
   margin: 0;
@@ -29,6 +46,7 @@ ul {
 }
 a {
   text-decoration: none;
+  display: block;
 }
 /*======== header   ============*/
 
@@ -38,15 +56,19 @@ a {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
+
   /* align-items: center;
   justify-content: center; */
 
   /* outline: 2px solid tomato; */
 }
-.container.page-header {
+header.page-header > div {
   display: flex;
   align-items: center;
-  /*justify-content: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  /*
   outline: 2px solid tomato;
   margin-left: auto;
   margin-right: auto;
@@ -67,22 +89,12 @@ a {
 a.logo {
   margin-right: 92px;
   margin-left: auto;
+  margin-top: 24px;
+  margin-bottom: 25px;
+
   /* background-color: blue; */
   color: #000000;
-
-  /* font-family: var(--secondary-fond);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em; */
 }
-/* font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 31px;
-/* identical to box height */
-
 .logo-Studio {
   font-family: var(--secondary-fond);
   font-style: normal;
@@ -127,7 +139,8 @@ line-height: 31px;
 }
 .address-list {
   display: flex;
-  margin-left: 331px;
+  margin-left: 332px;
+  justify-content: flex-start;
 }
 .address-contact-link {
   display: block;
@@ -158,8 +171,12 @@ ul > .address-contact-item + .address-contact-item {
 .hero {
   background: #2f303a;
   text-align: center;
-  margin-bottom: 89px;
+  /* margin-bottom: 89px; */
+  padding-bottom: 200px;
+  padding-top: 200px;
+  margin-bottom: 94px;
 }
+
 .hero-tittle {
   margin-top: 0;
   margin-bottom: 30px;
@@ -191,7 +208,10 @@ ul > .address-contact-item + .address-contact-item {
 /*========= advantages =========*/
 ul.advantages-list {
   display: flex;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
+  width: 1170px;
+
+  /* padding-top: 94px; */
   /* align-items: center;
   text-align: center; */
 }
@@ -217,7 +237,9 @@ ul > .advantages-item + .advantages-item {
   color: #757575;
 }
 /*========= occupation =========*/
-
+.occupation .container {
+  margin-bottom: 94px;
+}
 h2.occupation-tittle {
   text-align: center;
   font-weight: bold;
@@ -225,10 +247,11 @@ h2.occupation-tittle {
   line-height: 1.1666;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-bottom: 50px;
 }
 ul.occupation-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   /* background-color: green; */
   margin-bottom: 94px;
 }
@@ -237,8 +260,14 @@ li.occupation-list-item + .occupation-list-item {
 }
 
 /*========= our-team =========*/
+.our-team {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
+}
 .our-team-tittle {
-  margin-top: 94px;
   margin-bottom: 50px;
   /* background-color: tomato; */
 
@@ -251,8 +280,8 @@ li.occupation-list-item + .occupation-list-item {
 }
 .our-team-list {
   display: flex;
-  /* justify-content: space-between; */
   justify-content: center;
+  /* justify-content: center; */
   /* background-color: green; */
 }
 /* background: green; */
@@ -264,9 +293,6 @@ li.occupation-list-item + .occupation-list-item {
 /* .our-team-item {
   background-color: green;
 } */
-ul > .our-team-item + .our-team-item {
-  margin-left: 30px;
-}
 .our-team-members {
   font-weight: 500;
   font-size: 16px;
@@ -286,10 +312,16 @@ ul > .our-team-item + .our-team-item {
 /*========= footer =========*/
 footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 /* .logo-footer {
   display: flex;
 } */
+.footer-list {
+  width: 231px;
+  height: 81px;
+}
 
 .address-adress {
   font-style: normal;
@@ -309,6 +341,7 @@ footer {
 
   width: 145px;
   margin-top: 60px;
+  margin-bottom: 20px;
 }
 .address-footer-link {
   font-style: normal;
@@ -321,10 +354,10 @@ footer {
 
 /*=======button-list=====*/
 
-div.container.page-header.portfolio {
+/* div.container.page-header.portfolio {
   margin-bottom: 94px;
-  /* background-color: yellow; */
-}
+  background-color: yellow;
+} */
 ul.button-list.container {
   display: flex;
   /* background-color: blue; */
