@@ -69,10 +69,13 @@ img {
 }
 header.page-header > div {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  justify-content: center;
   justify-content: space-between;
   width: 1600px;
   border-bottom: 1px solid #ececec;
+  padding-left: 215px;
+  padding-right: 215px;
   /*
   outline: 2px solid tomato;
   margin-left: auto;
@@ -92,10 +95,12 @@ header.page-header > div {
   letter-spacing: 0.03em;
 }
 a.logo {
-  margin-right: 92px;
-  margin-left: 215px;
+  /* margin-right: 92px;
   margin-top: 24px;
-  margin-bottom: 25px;
+  margin-bottom: 25px; */
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   /* background-color: blue; */
   color: #000000;
@@ -145,13 +150,14 @@ a.logo {
 }
 .address-list {
   display: flex;
-  margin-left: 215px;
+
   justify-content: flex-start;
 }
 .address-contact-link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  /* margin-left: 215px; */
 
   font-style: normal;
   font-weight: 500;
@@ -180,7 +186,7 @@ ul > .address-contact-item + .address-contact-item {
   /* margin-bottom: 89px; */
   padding-bottom: 200px;
   padding-top: 200px;
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
 }
 
 .hero-tittle {
@@ -216,15 +222,17 @@ ul > .address-contact-item + .address-contact-item {
 /*========= advantages =========*/
 ul.advantages-list {
   display: flex;
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+
   width: 1170px;
-  align-items: center;
+  justify-content: center;
   /* padding-top: 94px; */
   /* align-items: center;
   text-align: center; */
 }
 .advantages-item {
-  background-color: blue;
+  /* background-color: blue; */
   width: 270px;
 }
 ul > .advantages-item + .advantages-item {
@@ -248,7 +256,7 @@ ul > .advantages-item + .advantages-item {
 }
 /*========= occupation =========*/
 .occupation .container {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 h2.occupation-tittle {
   text-align: center;
@@ -378,15 +386,18 @@ footer {
   margin-bottom: 94px;
   background-color: yellow;
 } */
-ul.button-list.container {
+ul.button-list-container {
   display: flex;
   /* background-color: blue; */
-  margin-bottom: 34px;
-  width: 611px;
-  justify-content: space-between;
+  /* margin-bottom: 34px; */
+  /* width: 611px; */
+  justify-content: center;
   padding-top: 94px;
   padding-bottom: 34px;
 }
+/* li.button-item {
+
+} */
 li.button-item + .button-item {
   margin-left: 8px;
 }
