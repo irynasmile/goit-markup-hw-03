@@ -68,6 +68,8 @@ header {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 .logo-Web {
   color: var(--accent-color);
@@ -82,8 +84,8 @@ a.logo {
   display: flex;
   /* background-color: blue; */
   color: #000000;
-  margin-right: 85px;
-  /* margin: auto; */
+  /* margin-right: 85px; */
+  margin: auto;
 }
 .logo-Studio {
   font-family: var(--secondary-fond);
@@ -155,10 +157,8 @@ ul > .address-contact-item + .address-contact-item {
 .hero {
   background: #2f303a;
   text-align: center;
-  /* margin-bottom: 89px; */
   padding-bottom: 200px;
   padding-top: 200px;
-  /* margin-bottom: 94px; */
 }
 
 .hero-tittle {
@@ -243,7 +243,7 @@ ul.occupation-list {
   display: flex;
   justify-content: center;
   /* background-color: green; */
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 li.occupation-list-item + .occupation-list-item {
   margin-left: 30px;
@@ -431,12 +431,13 @@ li.projects-list-item {
 
 .card-content {
   background: #ffffff;
-  /* border: 1px solid #eeeeee; */
+  border: 1px solid #000000;
 
-  /* border-radius: 5px; */
+  border-radius: 5px;
   padding: 19px 23px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  /* border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; */
+  border-color: #000000;
 }
 img.projects-list-foto {
   margin: 0;
