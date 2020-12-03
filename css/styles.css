@@ -42,20 +42,18 @@ img {
   height: auto;
 }
 /*======== header   ============*/
-
+.header {
+  display: flex;
+  border-bottom: 1px solid #ececec;
+  align-items: center;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
   /* outline: 2px solid tomato; */
-}
-.header {
-  display: flex;
-  border-bottom: 1px solid #ececec;
-  align-items: center;
 }
 .logo-Web {
   color: var(--accent-color);
@@ -173,6 +171,7 @@ address.address {
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -185,16 +184,19 @@ address.address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-ul.advantages-list {
+.advantages-list {
   display: flex;
   justify-content: space-between;
 }
 .advantages-item {
   width: 270px;
 }
-ul > .advantages-item + .advantages-item {
+.advantages-item + .advantages-item {
   margin-left: 30px;
 }
+/* .advantages-list :not(:last-child) {
+  margin-right: 30px;
+} */
 .advantages-heder {
   color: #212121;
   font-weight: bold;
@@ -212,7 +214,7 @@ ul > .advantages-item + .advantages-item {
   color: #757575;
 }
 /*========= occupation =========*/
-.occupation .container {
+.occupation {
   padding-bottom: 94px;
 }
 h2.occupation-tittle {
@@ -356,7 +358,7 @@ li.button-item + .button-item {
   background: #e5e5e5;
   color: #212121;
   border: none;
-  padding: 8px 22px;
+  padding: 6px 22px;
 }
 .button:hover,
 .button:focus {
