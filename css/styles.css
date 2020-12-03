@@ -189,8 +189,7 @@ address.address {
 }
 ul.advantages-list {
   display: flex;
-  /* width: 1170px; */
-  justify-content: center;
+  justify-content: space-between;
 }
 .advantages-item {
   width: 270px;
@@ -230,8 +229,6 @@ h2.occupation-tittle {
 ul.occupation-list {
   display: flex;
   justify-content: center;
-  /* background-color: green; */
-  padding-bottom: 94px;
 }
 li.occupation-list-item + .occupation-list-item {
   margin-left: 30px;
@@ -246,7 +243,6 @@ li.occupation-list-item + .occupation-list-item {
 .our-team-tittle {
   margin-bottom: 50px;
   /* background-color: tomato; */
-
   font-weight: bold;
   font-size: 36px;
   line-height: 1.666;
@@ -257,8 +253,6 @@ li.occupation-list-item + .occupation-list-item {
 .our-team-list {
   display: flex;
   justify-content: center;
-  /* justify-content: center; */
-  /* background-color: green; */
 }
 .our-team-item {
   background: #ffffff;
@@ -271,11 +265,6 @@ li.occupation-list-item + .occupation-list-item {
 .our-team-item + .our-team-item {
   margin-left: 30px;
 }
-/* .navigation-list > li:not(:last-child) {
-  margin-right: 50px; */
-/* .our-team-item {
-  background-color: green;
-} */
 .our-team-members {
   font-weight: 500;
   font-size: 16px;
