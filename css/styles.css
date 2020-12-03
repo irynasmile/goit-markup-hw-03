@@ -80,8 +80,7 @@ a.logo {
   color: #000000;
 }
 .navigation-container {
-  align-items: center;
-  display: flex;
+  /* align-items: center;
   /* margin-left: auto; */
   margin-right: auto;
 }
@@ -112,10 +111,9 @@ a.logo {
   color: var(--accent-color);
 }
 address.address {
-  display: flex;
   margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+  /* margin-right: auto; */
+  /* align-items: center; */
 }
 .address-list {
   display: flex;
