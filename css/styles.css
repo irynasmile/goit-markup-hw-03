@@ -65,11 +65,11 @@ img {
   /* outline: 2px solid tomato; */
 }
 header {
-  display: flex;
-  align-items: center;
   border-bottom: 1px solid #ececec;
-  padding-bottom: 24px;
-  padding-top: 24px;
+}
+.header {
+  display: flex;
+  /* align-items: center; */
 }
 .logo-Web {
   color: var(--accent-color);
@@ -82,10 +82,8 @@ header {
 a.logo {
   align-items: center;
   display: flex;
-  /* background-color: blue; */
   color: #000000;
-  /* margin-right: 85px; */
-  margin: auto;
+  margin-right: auto;
 }
 .logo-Studio {
   font-family: var(--secondary-fond);
@@ -97,10 +95,14 @@ a.logo {
 
   color: #000000;
 }
+.navigation-container {
+  align-items: center;
+  display: flex;
+  /* margin-left: auto; */
+  margin-right: auto;
+}
 .navigation-list {
   display: flex;
-  margin-right: 332px;
-  align-items: center;
 }
 .navigation-list > li:not(:last-child) {
   margin-right: 50px;
@@ -125,12 +127,14 @@ a.logo {
 .navigation-link.is-current {
   color: var(--accent-color);
 }
-
-ul.address-list {
-  align-items: center;
+address.address {
   display: flex;
+  margin-left: auto;
   margin-right: auto;
-  /* background: yellow; */
+  align-items: center;
+}
+ul.address-list {
+  display: flex;
 }
 .address-contact-link {
   font-style: normal;
@@ -194,8 +198,8 @@ ul > .address-contact-item + .address-contact-item {
 /*========= advantages =========*/
 ul.advantages-list {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 
   width: 1170px;
   justify-content: center;
@@ -254,8 +258,6 @@ li.occupation-list-item + .occupation-list-item {
   background: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 .our-team-tittle {
   margin-bottom: 50px;
@@ -315,12 +317,8 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-/* .footer-list {
-  width: 231px;
- 
-} */
 
-.address-adress {
+.address-address {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -340,10 +338,9 @@ a.logo-footer {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--white-color);
-
-  /* width: 145px;
-  margin-top: 60px;
-  margin-bottom: 20px; */
+}
+ul.footer-address > li:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-footer-link {
   font-style: normal;
@@ -355,12 +352,15 @@ a.logo-footer {
 }
 
 /*=======button-list=====*/
+.buttons-top {
+  padding-top: 154px;
+  padding-bottom: 34px;
+}
 
 ul.button-list-container {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 34px;
+  margin-bottom: 34px;
 }
 li.button-item + .button-item {
   margin-left: 8px;
@@ -374,7 +374,6 @@ li.button-item + .button-item {
   letter-spacing: 0.03em;
   color: #212121;
 }
-
 .button {
   font-family: var(--main-fond);
   font-style: var(--main-fond);
@@ -388,7 +387,6 @@ li.button-item + .button-item {
   border: none;
   padding: 8px 22px;
 }
-
 .button:hover,
 .button:focus {
   font-family: var(--main-fond);
@@ -428,20 +426,21 @@ li.projects-list-item:nth-child(3n) {
 li.projects-list-item {
   margin-right: 30px;
 }
-
-.card-content {
-  background: #ffffff;
-  border: 1px solid #000000;
-
-  border-radius: 5px;
-  padding: 19px 23px;
-  /* border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; */
-  border-color: #000000;
+.projects-list-foto {
+  width: 370px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
 }
-img.projects-list-foto {
-  margin: 0;
-  padding-right: 0;
+.card-content {
+  padding: 20px 24px;
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .projects-list-heder {
   font-style: normal;
