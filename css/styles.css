@@ -52,12 +52,10 @@ img {
 
   /* outline: 2px solid tomato; */
 }
-header {
-  border-bottom: 1px solid #ececec;
-}
 .header {
   display: flex;
-  /* align-items: center; */
+  border-bottom: 1px solid #ececec;
+  align-items: center;
 }
 .logo-Web {
   color: var(--accent-color);
@@ -327,13 +325,13 @@ ul.footer-address > li:not(:last-child) {
 /*=======button-list=====*/
 .buttons-top {
   padding-top: 154px;
-  padding-bottom: 34px;
+  padding-bottom: 94px;
 }
 
 ul.button-list-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 li.button-item + .button-item {
   margin-left: 8px;
