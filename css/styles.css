@@ -49,7 +49,7 @@ img {
 header {
   border-bottom: 1px solid #ececec;
 }
-.header {
+.header > .container {
   display: flex;
   align-items: center;
 }
@@ -59,7 +59,9 @@ header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
+  /* display: flex;
+  align-items: center; */
 }
 .logo-Web {
   color: var(--accent-color);
@@ -157,8 +159,8 @@ a.logo {
 }
 .hero-tittle {
   /* margin-top: 0;
-  margin-bottom: 30px; */
-  /* background-color: tomato; */
+ 
+  background-color: tomato; */
 
   color: var(--white-color);
   font-style: normal;
@@ -167,6 +169,7 @@ a.logo {
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 /*========= hero button =========*/
 .hero-button {
@@ -439,7 +442,7 @@ li.projects-list-item {
   letter-spacing: 0.03em;
   color: #757575;
   /* width: 322px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 /* .projects-list-text {
   font-weight: normal;
