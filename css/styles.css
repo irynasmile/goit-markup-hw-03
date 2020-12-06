@@ -59,7 +59,7 @@ header {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   /* display: flex;
   align-items: center; */
 }
@@ -87,10 +87,10 @@ a.logo {
 
   color: #000000;
 }
-.navigation-container {
-  /* align-items: center;
-  /* margin-left: auto; */
-}
+/* .navigation-container {
+   align-items: center;
+  margin-left: auto;
+} */
 .navigation-list {
   display: flex;
   /* margin-left: 91px; */
