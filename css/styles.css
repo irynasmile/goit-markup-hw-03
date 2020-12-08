@@ -86,14 +86,11 @@ a.logo {
 
   color: #000000;
 }
-/* .navigation-container {
-   align-items: center;
-  margin-left: auto;
-} */
-.navigation-list {
-  display: flex;
-  /* margin-left: 91px; */
+.navigation-container {
   margin-right: 331px;
+}
+ul.navigation-list {
+  display: flex;
 }
 .navigation-list > li:not(:last-child) {
   margin-right: 50px;
@@ -119,11 +116,9 @@ a.logo {
 .navigation-link.is-current {
   color: var(--accent-color);
 }
-.addres {
+/* .addres {
   margin-left: auto;
-  /* margin-right: auto; */
-  /* align-items: center; */
-}
+} */
 .address-list {
   display: flex;
 }
